@@ -16,6 +16,7 @@
  *
  * @author   Anton I. Grishan
  * @see      https://internetbs.net/?pId=intbsapi
+ * @website  https://github.com/GrishanAnton/InternetBS-API-PHP-Class
  * @version  1.2  30 Januar 2015
  * @license  LGPL
  * @license  http://opensource.org/licenses/LGPL-3.0 The GNU Lesser General Public License, version 3.0 (LGPL-3.0)
