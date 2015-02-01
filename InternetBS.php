@@ -1,6 +1,6 @@
 <?php
 /**
- * IntbsAPI class is designed to provide simple access to all InternetBS reseller API functions such as:
+ * InternetBS class is designed to provide simple access to all InternetBS reseller API functions such as:
  *
  * - Domain related operations (Create, Update, Renew, Info, Check, Push and so on)
  * - Private Whois (Enable/Disable)
@@ -20,7 +20,7 @@
  * @license  LGPL
  * @license  http://opensource.org/licenses/LGPL-3.0 The GNU Lesser General Public License, version 3.0 (LGPL-3.0)
  */
-class IntbsAPI extends IntbsInterface {
+class InternetBS extends InternetBSApiInterface {
 
     /**
      * The command is intended to check whether a domain is available for registration or not

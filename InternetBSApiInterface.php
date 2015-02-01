@@ -1,6 +1,6 @@
 <?php
 /**
- * InternetBsApiInterface class
+ * InternetBSApiInterface class
  *
  * This class contains all the main functions to work with InternetBS.net API servers:
  * - send commands with parameters to live and test API server;
