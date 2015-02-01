@@ -40,7 +40,7 @@ try {
      echo "OOPS Error: ".$e->getMessage()."\n";
  }
 ```
-That is really simple right? See other examples in "examples" and class documentation in "doc" directories.
+That is really simple right? See other examples in "example" and class documentation in "doc" directories.
 
 How to test code in sandbox
 ---------------------------
