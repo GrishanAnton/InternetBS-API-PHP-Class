@@ -1,10 +1,10 @@
 # InternetBS API PHP Class
 PHP to get easy access to all InternetBS reseller API functions
 
-Supported Features
+### Supported Features
 --------
 
-Usage Example - Quick Start
+### Usage Example - Quick Start
 --------
 Usage of InternetBS Reseller API class is very easy. Just see example below:
 ```php
@@ -43,12 +43,23 @@ That is really simple right? See other examples in "example" and class documenta
 
 **NOTE:** command execution at test server usually taking longer time than at live server
 
-### How to test code in sandbox
+### How to Test Code at Sandbox Server
 --------
 If you not specify a valid API key and password then all commands will be executed at test server. So to execute command at test server you actually no need to do anything it will be done by default.
 
 ### How To Get Real API Key?
 --------
+To execute commands at live server you need valid API key. To get an API key you need to perform 4 simple steps:
+1. Create [new account](https://internetbs.net/newaccount.html?pId=russia) at InternetBS site using [this link](https://internetbs.net/newaccount.html?pId=russia).
+2. After registration open control panel and see at the top of the page (right upper conner) link **Get API Key**, click this link
+3. Follow instructions. You will need to add funds to your balance in order to be able to execute payable operations like domain registration, renew, transfer and so on.
+4. That is all, when you done you will get you own API key and password.
+
+Once you got it you may use to execute any API commands at real live server. To use your API key and password just do once somewhere in script begin:
+```php
+InternetBS::init('MyApiKey', 'mypassword');
+//.... here we can execute any command(s) at live server
+```
 
 ### Useful Links
 --------
