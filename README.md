@@ -1,14 +1,11 @@
-# InternetBS-API-PHP-Class
+# InternetBS API PHP Class
 PHP to get easy access to all InternetBS reseller API functions
 
+###Supported Features
 
-##Supported Features
-------------------
-
-
-##Usage Example - Quick Start
----------------------------
+###Usage Example - Quick Start
 Usage of InternetBS Reseller API class is very easy. Just see example below:
+---------------------------
 ```php
 include_once('InternetBS.php');
 
@@ -40,20 +37,16 @@ try {
      echo "OOPS Error: ".$e->getMessage()."\n";
  }
 ```
+---------------------------
 That is really simple right? See other examples in "example" and class documentation in "doc" directories.
 
 **NOTE:** command execution at test server taking longer time than at live server
 
-##How to test code in sandbox
----------------------------
+###How to test code in sandbox
 
+###How To Get Real API Key?
 
-##How To Get Real API Key?
-------------------------
-
-
-##Useful Links
-------------
-* [InternetBS.net site] (http://internetbs.net/?pId=russia)
+###Useful Links
+* [InternetBS.net] (http://internetbs.net/?pId=russia) domain registration
 * [Official Reseller/Registrar Domain Name API Documentation] (http://internetbs.net/ResellerRegistrarDomainNameAPI/)
 * [Ready to use plugins for leading web hosting and billing platforms] (http://internetbs.net/en/domain-name-registrations/domain-automation-plugins-modules.html?pId=russia)
