@@ -50,10 +50,10 @@ If you not specify a valid API key and password then all commands will be execut
 ### How To Get Real API Key?
 --------
 To execute commands at live server you need valid API key. To get an API key you need to perform 4 simple steps:
-1. Create [new account](https://internetbs.net/newaccount.html?pId=russia) at InternetBS site using [this link](https://internetbs.net/newaccount.html?pId=russia).
-2. After registration open control panel and see at the top of the page (right upper conner) link **Get API Key**, click this link
-3. Follow instructions. You will need to add funds to your balance in order to be able to execute payable operations like domain registration, renew, transfer and so on.
-4. That is all, when you done you will get you own API key and password.
+1. Create [new account](https://internetbs.net/newaccount.html?pId=russia) at InternetBS site using [this link](https://internetbs.net/newaccount.html?pId=russia). 1
+2. After registration open control panel and see at the top of the page (right upper conner) link **Get API Key**, click this link 2
+3. Follow instructions. You will need to add funds to your balance in order to be able to execute payable operations like domain registration, renew, transfer and so on. 3
+4. When you are done you will get your own API key and password. 4
 
 Once you got it you may use to execute any API commands at real live server. To use your API key and password just do once somewhere in script begin:
 ```php
