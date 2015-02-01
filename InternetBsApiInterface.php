@@ -1,6 +1,6 @@
 <?php
 /**
- * IntbsInterface class
+ * InternetBsApiInterface class
  *
  * This class contains all the main functions to work with InternetBS.net API servers:
  * - send commands with parameters to live and test API server;
@@ -17,7 +17,7 @@
  * @license  LGPL
  * @license  http://opensource.org/licenses/LGPL-3.0 The GNU Lesser General Public License, version 3.0 (LGPL-3.0)
  */
-class IntbsInterface {
+class InternetBSApiInterface {
 
     const apiClassVersion   = '1.2'; // Interface version
 
