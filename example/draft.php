@@ -14,9 +14,8 @@ try {
         echo "Domain unavailable!\n";
     }
 
-    // To execute command at live server you just need to set your API key and password
-    // You need to initiate it only once and after that all commands will be executed at
-    // live server
+    // To execute command at live server you just need to set your API key and password.
+    // Do it just once and after that all commands will be executed at live server.
     InternetBS::init('MyApiKey', 'mypassword');
 
     // Now you may execute command at live server
