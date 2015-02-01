@@ -50,12 +50,12 @@ If you not specify a valid API key and password then all commands will be execut
 ### How To Get Real API Key?
 --------
 To execute commands at live server you need valid API key. To get an API key you need to perform 4 simple steps:
-<ol>
-<li> Create [new account](https://internetbs.net/newaccount.html?pId=russia) at InternetBS site using [this link](https://internetbs.net/newaccount.html?pId=russia).</li>
-<li> After registration open control panel and see at the top of the page (right upper conner) link **Get API Key**, click this link.</li>
-<li> Follow instructions. You will need to add funds to your balance in order to be able to execute payable operations like domain registration, renew, transfer and so on.</li>
-<li> When you are done you will get your own API key and password.</li>
-</ol>
+
+* Create [new account](https://internetbs.net/newaccount.html?pId=russia) at InternetBS site using [this link](https://internetbs.net/newaccount.html?pId=russia).
+* After registration open control panel and see at the top of the page (right upper conner) link **Get API Key**, click this link.
+* Follow instructions. You will need to add funds to your balance in order to be able to execute payable operations like domain registration, renew, transfer and so on.
+* When you are done you will get your own API key and password.
+
 
 Once you got it you may use to execute any API commands at real live server. To use your API key and password just do once somewhere in script begin:
 ```php
@@ -66,5 +66,5 @@ InternetBS::init('MyApiKey', 'mypassword');
 ### Useful Links
 --------
 * [InternetBS.net] (https://internetbs.net/?pId=russia) -- official registrar site
-* [Official Reseller/Registrar Domain Name API Documentation] (http://internetbs.net/ResellerRegistrarDomainNameAPI/)
+* [Reseller/Registrar Domain Name API Documentation] (http://internetbs.net/ResellerRegistrarDomainNameAPI/)
 * [Ready to use plugins for leading web hosting and billing platforms] (http://internetbs.net/en/domain-name-registrations/domain-automation-plugins-modules.html?pId=russia)
