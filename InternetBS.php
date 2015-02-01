@@ -22,11 +22,11 @@
  */
 
 // Try to load InternetBSApiInterface class definition if for some reason is not loaded yet
-if(!class_exists('InternetBSApiInterface', false))    {
-    require_once('InternetBSApiInterface.php');
+if(!class_exists('InternetBSApiCore', false))    {
+    require_once('InternetBSApiCore.php');
 }
 
-class InternetBS extends InternetBSApiInterface {
+class InternetBS extends InternetBSApiCore {
 
     /**
      * @var InternetBS object instance
