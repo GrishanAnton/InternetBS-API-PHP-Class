@@ -55,6 +55,7 @@ Looks simple, isn't it? See other examples in "example" folder. Also you can fin
 ### How to Test Code at Sandbox Server
 --------
 If you not specify a valid API key and password then all commands will be executed at test server. So to execute command at test server you actually no need to do anything it will be done by default.
+
 **NOTE:** API test server much slower than real api server. If some command work slow at test server do not worry about that too much, most probably at live server it will be executed much faster.
 
 ### How To Get Real API Key?
@@ -73,6 +74,6 @@ InternetBS::init('PUT-YOUR-API-HERE', 'PASSWORD');
 
 ### Useful Links
 --------
-* [InternetBS.net] (https://internetbs.net/?pId=russia) -- official registrar site
-* [Reseller/Registrar Domain Name API Documentation] (http://internetbs.net/ResellerRegistrarDomainNameAPI/)
 * [Ready to use plugins for leading web hosting and billing platforms] (http://internetbs.net/en/domain-name-registrations/domain-automation-plugins-modules.html?pId=russia)
+* [Reseller/Registrar Domain Name API Documentation] (http://internetbs.net/ResellerRegistrarDomainNameAPI/)
+
