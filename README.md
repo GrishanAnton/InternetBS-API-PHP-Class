@@ -8,7 +8,7 @@ Supported Features
 
 Usage Example - Quick Start
 ---------------------------
-
+Usage of InternetBS Reseller API class is very easy. Just see example below.
 ```php
 include_once('InternetBS.php');
 
