@@ -20,7 +20,57 @@
  * @license  LGPL
  * @license  http://opensource.org/licenses/LGPL-3.0 The GNU Lesser General Public License, version 3.0 (LGPL-3.0)
  */
+
+// Try to load InternetBSApiInterface class definition if for some reason is not loaded yet
+if(!class_exists('InternetBSApiInterface', false))    {
+    require_once('InternetBSApiInterface.php');
+}
+
 class InternetBS extends InternetBSApiInterface {
+
+    /**
+     * @var InternetBS object instance
+     */
+    private static $api = null;
+
+
+    /**
+     * Initiate API instance
+     *
+     * @param string $apiKey
+     * @param string $password
+     * @param null $agentName
+     */
+    public static function init($apiKey = null, $password = null, $agentName = null)   {
+
+        // Check if we we have to use test api server
+        if(empty($apiKey))    {
+            $apiKey   = 'testapi';
+            $password = 'testpass';
+        }
+
+        // Create object instance
+        self::$api = new self($apiKey, $password, $agentName);
+    }
+
+    /**
+     * Get access to API object instance
+     * @return InternetBS
+     */
+    public static function api()    {
+
+        // Check if we already initiate API access object instance
+        if(empty(self::$api))    {
+            // Ok. Let's initiate API to get access to test server
+            self::init();
+        }
+
+        return self::$api;
+    }
+
+
+
+
 
     /**
      * The command is intended to check whether a domain is available for registration or not
@@ -69,8 +119,8 @@ class InternetBS extends InternetBSApiInterface {
     /**
      * Create domain name and close contacts from other domain
      *
-     * @param $domainName
-     * @param $cloneContactsFromDomain
+     * @param string $domainName
+     * @param string $cloneContactsFromDomain
      * @param int $period
      * @param array $other
      *

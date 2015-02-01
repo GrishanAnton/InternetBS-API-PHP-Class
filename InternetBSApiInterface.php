@@ -88,26 +88,19 @@ class InternetBSApiInterface {
      *
      * @param string $apiKey    API key
      * @param string $password  password for your API key
-     * @param bool   $isDebug   send commands to live server (false) or test server (true). If set true, then API key and password ignored.
      * @param string $agentName agent name which we may want to set when send some API command
      */
-    public function __construct($apiKey, $password, $isDebug = false, $agentName = null) {
+    public function __construct($apiKey, $password, $agentName = null) {
 
         // By default we will not write any log
         $this->_setLogConfig(self::writeLogCase_never);
 
         // Set host, api key and password
-        if($isDebug)    {
-            // Use credential for test server
-            $this->host      = 'testapi.internet.bs';
-            $this->apiKey    = 'testapi';
-            $this->password  = 'testpass';
-        } else {
-            // Use credential for live server
-            $this->host      = 'api.internet.bs';
-            $this->apiKey    = $apiKey;
-            $this->password  = $password;
-        }
+        $this->apiKey    = $apiKey;
+        $this->password  = $password;
+
+        // Check if we need to execute command at live or at test server
+        $this->host = $this->_isSame($this->apiKey, 'testapi') ? 'testapi.internet.bs' : 'api.internet.bs';
 
         $this->agentName = empty($agentName) ? get_class($this).' v.'.self::apiClassVersion : $agentName;
     }
