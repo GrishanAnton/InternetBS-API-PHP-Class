@@ -4,6 +4,7 @@ PHP to get easy access to all InternetBS reseller API functions
 ### Supported Features
 
 ### Usage Example - Quick Start
+--------
 Usage of InternetBS Reseller API class is very easy. Just see example below:
 --------
 ```php
@@ -37,7 +38,7 @@ try {
      echo "OOPS Error: ".$e->getMessage()."\n";
  }
 ```
---------
+
 That is really simple right? See other examples in "example" and class documentation in "doc" directories.
 
 **NOTE:** command execution at test server taking longer time than at live server
