@@ -45,6 +45,7 @@ That is really simple right? See other examples in "example" and class documenta
 
 ### How to test code in sandbox
 --------
+If you not specify a valid API key and password then all commands will be executed at test server. So to execute command at test server you actually no need to do anything it will be done by default.
 
 ### How To Get Real API Key?
 --------
