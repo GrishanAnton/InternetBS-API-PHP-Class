@@ -42,6 +42,8 @@ try {
 ```
 That is really simple right? See other examples in "example" and class documentation in "doc" directories.
 
+**NOTE:** command execution at test server taking longer time than at live server
+
 How to test code in sandbox
 ---------------------------
 
