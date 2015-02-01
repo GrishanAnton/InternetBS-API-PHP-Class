@@ -7,7 +7,7 @@ include_once('../InternetBS.php');
 
 try {
 
-    // Execute command at test server
+    // You already can execute command at test server! Let's do:
     if(InternetBS::api()->domainCheck('check-at-test-server.com'))    {
         echo "Domain available!\n";
     } else {

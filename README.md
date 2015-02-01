@@ -12,7 +12,7 @@ include_once('InternetBS.php');
 
 try {
 
-    // Execute command at test server
+    // You already can execute command at test server! Let's do:
     if(InternetBS::api()->domainCheck('check-at-test-server.com'))    {
         echo "Domain available!\n";
     } else {
@@ -41,7 +41,7 @@ try {
 
 That is really simple right? See other examples in "example" and class documentation in "doc" directories.
 
-**NOTE:** command execution at test server taking longer time than at live server
+**NOTE:** command execution at test server usually taking longer time than at live server
 
 ### How to test code in sandbox
 --------
