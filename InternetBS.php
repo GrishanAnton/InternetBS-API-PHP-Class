@@ -15,7 +15,7 @@
  * use it in ANY commercial project without restrictions. Happy coding :)
  *
  * @author   Anton I. Grishan
- * @see      https://internetbs.net/?pId=intbsapi
+ * @see      https://internetbs.net/?pId=apiclass
  * @website  https://github.com/GrishanAnton/InternetBS-API-PHP-Class
  * @version  1.2  30 Januar 2015
  * @license  LGPL

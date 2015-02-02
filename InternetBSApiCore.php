@@ -12,7 +12,7 @@
  * use it in ANY commercial project without restrictions. Happy coding :)
  *
  * @author   Anton I. Grishan
- * @see      https://internetbs.net/?pId=intbsapi
+ * @see      https://internetbs.net/?pId=apiclass
  * @website  https://github.com/GrishanAnton/InternetBS-API-PHP-Class
  * @version  1.2  30 Januar 2015
  * @license  LGPL
@@ -221,11 +221,13 @@ class InternetBSApiCore {
      * @param $commandName
      * @param array $params
      *
-     * @see http://internetbs.net/ResellerRegistrarDomainNameAPI/?pId=intbsapi
+     * @see http://internetbs.net/ResellerRegistrarDomainNameAPI/?pId=apiclass
      *
      * @return array result of command execution
      */
     public final function _executeApiCommand($commandName, array $params)  {
+
+        // !!! PLEASE DO NOT CHANGE ANY IN THIS METHOD !!!
 
         $commandName = trim($commandName, ' /'); // Just to make sure that we have no leading space or slash in command name
 
@@ -241,15 +243,13 @@ class InternetBSApiCore {
             }
         }
 
-        // !!! PLEASE DO NOT CHANGE ANY IN THIS METHOD !!!
-
         // release information about last error
         $this->_releaseLastError();
 
         // added a mandatory params for API call
         $params['ApiKey']         = $this->apiKey;
         $params['Password']       = $this->password;
-        $params['pId']            = 'intbsapi';
+        $params['pId']            = 'apiclass';
         $params['responseformat'] = 'JSON';
 
         // execute API command at server
@@ -355,7 +355,7 @@ class InternetBSApiCore {
     protected function _writeLog_file($url, $commandName, $params, $responses, $startTime, $endTime)    {
 
         // Check if we know file path
-        $path = isset($this->logConfig['path']) ? $this->logConfig['path'] : 'intbsapi_'.date('Y_m_d').'.log';
+        $path = isset($this->logConfig['path']) ? $this->logConfig['path'] : 'apiclass_'.date('Y_m_d').'.log';
 
         if(file_put_contents($path, $this->_plainTextForLog($url, $commandName, $params, $responses, $startTime, $endTime)."\n", FILE_APPEND) === false)    {
             $this->_error(self::errorType_internal, 'Can\'t write entry log in "'.$path.'" file');
