@@ -239,7 +239,9 @@ class InternetBS extends InternetBSApiCore {
 
             $currentExpirationDate = trim($currentExpirationDate);
 
-            if(preg_match('/^20[0-9]{2}-[01][0-9]-[0-3][0-9]$/is', $currentExpirationDate))    {
+            if(preg_match('/^[0-9]+$/is', $currentExpirationDate))    {
+                $params['currentexpiration'] = date('Y-m-d', intval($currentExpirationDate));
+            } else if(preg_match('/^20[0-9]{2}-[01][0-9]-[0-3][0-9]$/is', $currentExpirationDate))    {
                 $params['currentexpiration'] = $currentExpirationDate;
             } else {
                 $this->_error(self::errorType_internal, 'Invalid current expiration value ['.$currentExpirationDate.'], expected format YYYY-mm-dd');
