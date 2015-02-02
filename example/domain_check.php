@@ -32,8 +32,4 @@ try {
 } catch (Exception $e) {
     echo "OOPS Error: ".$e->getMessage()."\n";
 }
-
-
-
-
 ?>
