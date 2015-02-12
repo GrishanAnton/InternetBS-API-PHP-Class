@@ -249,7 +249,7 @@ class InternetBSApiCore {
         // added a mandatory params for API call
         $params['ApiKey']         = $this->apiKey;
         $params['Password']       = $this->password;
-        
+
         $params['responseformat'] = 'JSON';
 
         // execute API command at server
